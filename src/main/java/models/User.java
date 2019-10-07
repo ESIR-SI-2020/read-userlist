@@ -10,6 +10,15 @@ public class User {
     private Address address;
     private List<String> friendsId;
 
+    public User(String username, String email, String photoUrl, String bio, Address address, List<String> friendsId) {
+        this.username = username;
+        this.email = email;
+        this.photoUrl = photoUrl;
+        this.bio = bio;
+        this.address = address;
+        this.friendsId = friendsId;
+    }
+
     public String getUsername() {
         return username;
     }

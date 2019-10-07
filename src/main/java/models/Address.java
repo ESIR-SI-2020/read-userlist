@@ -7,6 +7,13 @@ public class Address {
     private Integer streetNumber;
     private String complement;
 
+    public Address(String postalCode, String street, Integer streetNumber, String complement) {
+        this.postalCode = postalCode;
+        this.street = street;
+        this.streetNumber = streetNumber;
+        this.complement = complement;
+    }
+
     public String getPostalCode() {
         return postalCode;
     }
