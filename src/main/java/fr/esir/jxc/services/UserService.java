@@ -7,8 +7,7 @@ import java.util.List;
 
 public class UserService {
 
-    public static List<User> getUsersList() {
-
+    public List<User> getUsersList() {
         List<User> usersList = new ArrayList<User>();
         //fetch from elasticsearch
         return usersList;

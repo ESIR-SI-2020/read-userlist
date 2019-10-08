@@ -3,6 +3,7 @@ package fr.esir.jxc;
 import fr.esir.jxc.controllers.UserController;
 import fr.esir.jxc.models.User;
 import fr.esir.jxc.models.Address;
+import fr.esir.jxc.services.UserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeAll;
@@ -19,7 +20,7 @@ public class UTUserController {
     private List<User> expectedUserList;
 
     @BeforeAll
-    public void initTests() {
+    public void init() {
         // Initialize userController
         userController = new UserController();
 
@@ -57,8 +58,8 @@ public class UTUserController {
 
     @Test
     public void getUsersList_ShouldRetrieveAllUsers_OK() {
-        UserController userController = mock(UserController.class);
-        when(userController.getUsersList()).thenReturn(returnedUserList);
+        UserService userService = mock(UserService.class);
+        when(userService.getUsersList()).thenReturn(returnedUserList);
 
         List<User> userList = userController.getUsersList();
 
