@@ -1,9 +1,30 @@
+import controllers.UserController;
+import models.User;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
 import org.mockito.Mockito;
 
-public class TUUserController {
-    @Test
-    public static void getUsersList_ShouldRetrieveAllUsers_OK() {
+import java.util.ArrayList;
+import java.util.List;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+public class TUUserController {
+    private List<User> returnedUserList;
+    private List<User> expectedUserList;
+
+    @BeforeAll
+    public void initTests() {
+        returnedUserList = new ArrayList<User>();
+        expectedUserList = new ArrayList<User>();
+
+        User user1 = new User();
+    }
+
+    @Test
+    public void getUsersList_ShouldRetrieveAllUsers_OK() {
+        UserController userController = mock(UserController.class);
+        when(userController.getUsersList()).thenReturn(returnedUserList);
     }
 }
