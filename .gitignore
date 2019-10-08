@@ -27,3 +27,4 @@ target/
 
 # Ignore idea configuration files #
 .idea/
+*.iml
