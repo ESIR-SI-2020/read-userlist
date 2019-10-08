@@ -7,10 +7,10 @@ public class User {
     private String email;
     private String photoUrl;
     private String bio;
-    private Address address;
+    private models.Address address;
     private List<String> friendsId;
 
-    public User(String username, String email, String photoUrl, String bio, Address address, List<String> friendsId) {
+    public User(String username, String email, String photoUrl, String bio, models.Address address, List<String> friendsId) {
         this.username = username;
         this.email = email;
         this.photoUrl = photoUrl;
@@ -51,11 +51,11 @@ public class User {
         this.bio = bio;
     }
 
-    public Address getAddress() {
+    public models.Address getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(models.Address address) {
         this.address = address;
     }
 

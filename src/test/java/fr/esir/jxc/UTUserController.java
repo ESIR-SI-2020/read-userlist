@@ -1,3 +1,5 @@
+package fr.esir.jxc;
+
 import controllers.UserController;
 import models.Address;
 import models.User;
@@ -11,7 +13,7 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class TUUserController {
+public class UTUserController {
     private UserController userController;
     private List<User> returnedUserList;
     private List<User> expectedUserList;
