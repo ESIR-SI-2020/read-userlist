@@ -1,4 +1,4 @@
-package models;
+package fr.esir.jxc.models;
 
 public class Address {
 

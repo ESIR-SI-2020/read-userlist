@@ -1,4 +1,4 @@
-package models;
+package fr.esir.jxc.models;
 
 import java.util.List;
 
@@ -7,10 +7,10 @@ public class User {
     private String email;
     private String photoUrl;
     private String bio;
-    private models.Address address;
+    private Address address;
     private List<String> friendsId;
 
-    public User(String username, String email, String photoUrl, String bio, models.Address address, List<String> friendsId) {
+    public User(String username, String email, String photoUrl, String bio, Address address, List<String> friendsId) {
         this.username = username;
         this.email = email;
         this.photoUrl = photoUrl;
@@ -51,11 +51,11 @@ public class User {
         this.bio = bio;
     }
 
-    public models.Address getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(models.Address address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 

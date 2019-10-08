@@ -1,8 +1,8 @@
 package fr.esir.jxc;
 
-import controllers.UserController;
-import models.Address;
-import models.User;
+import fr.esir.jxc.controllers.UserController;
+import fr.esir.jxc.models.User;
+import fr.esir.jxc.models.Address;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeAll;

@@ -1,7 +1,6 @@
-package services;
+package fr.esir.jxc.services;
 
-import models.Address;
-import models.User;
+import fr.esir.jxc.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
